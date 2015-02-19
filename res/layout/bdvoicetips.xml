@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+     android:background="@drawable/app_bg"
+     >
+    
+    <TextView 
+        android:text="目前支持的语音命令"
+        android:gravity="center_horizontal"
+        style="@style/text_title_style"
+        />
+    
+    <!--  <View style="@style/view_line" /> -->
+    
+    <TextView 
+        style="@style/text_content_style"
+        android:text="(冒号右边的是语音命令)\n
+        进入电话拨号盘界面: 打电话\n
+        进入照相机界面: 启动照相机\n
+        进入启动音乐播放器: 启动音乐播放器\n
+        进入相册: 启动图片列表\n
+        进入短信箱: 打开短信列表\n
+        打开通话记录: 打开通话记录\n
+        打开壁纸设置: 打开壁纸设置\n
+  打开设置主界面: 打开设置主界面 \n
+  返回桌面: 返回桌面\n
+  打开录音机: 打开录音机\n
+ 显示应用详细列表: 显示应用详细列表\n
+ 上网: 上网\n
+ 显示当前位置: 显示当前位置\n 
+ 嘻嘻~~~大家也可以尝试一下调戏指令哦~~~如我是谁,我爱你之类的"
+        />
+
+  
+    
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        >
+        <Button 
+            style="@style/button_next_style"
+            android:onClick="next"
+            android:text="进入语音云助手"
+            />
+    </RelativeLayout>
+    
+    
+</LinearLayout>

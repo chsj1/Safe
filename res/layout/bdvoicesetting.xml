@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    
+    <RelativeLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="14dp"
+        android:paddingBottom="14dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+	    
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="@string/play_start_sound"
+            android:textColor="#ffffff"
+            android:textSize="18sp"/>
+        
+        <CheckBox android:id="@+id/cb_play_start_sound"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"/>
+        
+    </RelativeLayout>
+    
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#435345">
+    </LinearLayout>
+    
+    <RelativeLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="14dp"
+        android:paddingBottom="14dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+	    
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="@string/play_end_sound"
+            android:textColor="#ffffff"
+            android:textSize="18sp"/>
+        
+        <CheckBox android:id="@+id/cb_play_end_sound"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"/>
+        
+    </RelativeLayout>
+    
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#435345">
+    </LinearLayout>
+    
+    <RelativeLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="14dp"
+        android:paddingBottom="14dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+	    
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="@string/show_vol"
+            android:textColor="#ffffff"
+            android:textSize="18sp"/>
+        
+        <CheckBox android:id="@+id/cb_show_vol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"/>
+        
+    </RelativeLayout>
+    
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#435345">
+    </LinearLayout>
+    
+    <TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="#ffffff"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:text="@string/choose_voice_type"/>
+    
+    <Spinner    
+        android:id="@+id/voiceType"    
+        android:layout_width="fill_parent"    
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dp"
+        android:entries="@array/voice_tpye">    
+    </Spinner><!-- 定义一个下拉菜单-->
+    
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#435345">
+    </LinearLayout>
+    
+    <TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="#ffffff"
+        android:text="@string/choose_dialog_theme"/>
+    
+    <Spinner    
+        android:id="@+id/dialogTheme"    
+        android:layout_width="fill_parent"    
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dp"
+        android:entries="@array/dialog_theme">    
+    </Spinner><!-- 定义一个下拉菜单-->
+    
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#435345">
+    </LinearLayout>
+
+</LinearLayout>

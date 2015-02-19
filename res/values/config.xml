@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+   <string name="apkurl">http://192.168.1.106:8080/info.xml</string>
+   <!--  <string name="address_url">http://192.168.1.100:8080/Web/address.db</string>-->
+   <!--  <string name="address_url">http://m2mun.com/address.db</string>-->
+   <string name="address_url">http://bcs.duapp.com/addressdatabase/address.db</string>
+   <string name="updateinfo_url">http://192.168.1.100:8080/Web/info.xml</string>
+</resources>

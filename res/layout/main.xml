@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_bg"
+    android:orientation="vertical" >
+
+    <!-- 
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40sp"
+        android:background="@drawable/top_01"
+        android:orientation="horizontal" 
+        style="@style/text_title_style"
+        >
+
+        <ImageView
+            android:layout_width="35sp"
+            android:layout_height="35sp"
+            android:src="@drawable/main6" />
+
+        <TextView
+            android:layout_width="100sp"
+            android:layout_height="fill_parent"
+            android:gravity="center_vertical"
+            android:text="心飞翔手机卫士" 
+            />
+    </LinearLayout>
+    -->
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="40sp"
+        android:background="@drawable/weixin_mmtitle_bg"
+        >
+        
+         <ImageView
+             android:id="@+id/tt_logo"
+            android:layout_width="35sp"
+            android:layout_height="35sp"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/main6" 
+            android:layout_marginLeft="10dip"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:textSize="25sp"
+            android:text="心飞翔手机卫士" 
+            android:layout_toRightOf="@id/tt_logo"
+            android:layout_centerVertical="true"
+            android:textColor="#ffffff"
+            />
+    </RelativeLayout>
+   <!--  <View style="@style/view_line" /> -->
+
+    <GridView
+        android:id="@+id/gv_main_gv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:cacheColorHint="@android:color/transparent"
+        android:listSelector="@android:color/transparent"
+        android:numColumns="3" />
+
+</LinearLayout>

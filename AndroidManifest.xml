@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.njupt.safe"
+    android:versionCode="12"
+    android:versionName="3.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="8" />
+
+    <instrumentation
+        android:name="android.test.InstrumentationTestRunner"
+        android:targetPackage="com.njupt.safe" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.WRITE_SMS" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+
+    <!-- 以下为使用定位SDK多需要用到的权限 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.READ_LOGS" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+
+    <!-- 以下是集成语音识别时添加的权限 -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <!-- 晃动器的权限 -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <!-- 新增小火箭以后增加的权限 -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
+    <!-- 移动统计时添加的权限 -->
+   
+
+    <application
+        android:name="MobileSafeApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/main6"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.NoTitleBar" >
+        <uses-library android:name="android.test.runner" />
+
+        <activity
+            android:name="com.njupt.safe.activity.SplashActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.njupt.safe.activity.MainActivity" />
+        <activity android:name="com.njupt.safe.activity.MainActivity1" />
+        <activity android:name="com.njupt.safe.activity.SettingCenterActivity" />
+        <activity android:name="com.njupt.safe.activity.LostProtectActivity" />
+        <activity android:name="com.njupt.safe.activity.Setup1ConfigActivity" />
+        <activity android:name="com.njupt.safe.activity.Setup2ConfigActivity" />
+        <activity android:name="com.njupt.safe.activity.Setup3ConfigActivity" />
+        <activity android:name="com.njupt.safe.activity.ContactListActivity" />
+        <activity android:name="com.njupt.safe.activity.ContactList1Activity" />
+        <activity android:name="com.njupt.safe.activity.Setup4ConfigActivity" />
+        <activity android:name="com.njupt.safe.activity.SetupConfigActivity" />
+        <activity android:name="com.njupt.safe.activity.LostProtectedSettingActivity" />
+        <activity android:name="com.njupt.safe.activity.AddIpCallActivity" />
+        <activity android:name="com.njupt.safe.activity.AtoolsActivity" />
+        <activity android:name="com.njupt.safe.activity.AddressQueryActivity" />
+        <activity android:name="com.njupt.safe.activity.DragViewActivity" />
+        <activity
+            android:name="com.njupt.safe.activity.BlackNumberListActivity"
+            android:launchMode="singleTop" />
+        <activity android:name="com.njupt.safe.activity.AppManagerActivity" />
+        <activity
+            android:name="com.njupt.safe.activity.AppLockManagerActivity"
+            android:theme="@android:style/Theme.Black.NoTitleBar" />
+        <activity
+            android:name="com.njupt.safe.activity.EnterPasswordActivity"
+            android:launchMode="singleInstance"
+            android:theme="@android:style/Theme.Black.NoTitleBar" />
+        <activity
+            android:name="com.njupt.safe.activity.TaskManagerSettingActivity"
+            android:theme="@android:style/Theme.Black.NoTitleBar" />
+        <activity
+            android:name="com.njupt.safe.activity.TaskManagerActivity"
+            android:theme="@android:style/Theme.Black.NoTitleBar" />
+        <activity
+            android:name="com.njupt.safe.activity.TrafficManagerActivity"
+            android:theme="@android:style/Theme.Black.NoTitleBar" />
+        <activity
+            android:name="com.njupt.safe.activity.VirusActivity"
+            android:theme="@android:style/Theme.Black.NoTitleBar" />
+        <activity
+            android:name="com.njupt.safe.activity.VirusActivity1"/>
+        
+        <activity
+            android:name="com.njupt.safe.activity.CommonNumberActivity"
+            android:theme="@android:style/Theme.Black.NoTitleBar" />
+        <activity android:name="com.njupt.safe.activity.LocationActivity" />
+        <!-- 语音识别的activity的注册 -->
+        <activity
+            android:name="com.njupt.safe.activity.BDVoiceRecognitionActivity"
+            android:theme="@android:style/Theme.Black.NoTitleBar" />
+        <activity
+            android:name="com.njupt.safe.activity.BDVoiceSettingActivity"
+            android:theme="@android:style/Theme.Black.NoTitleBar" />
+        <activity
+            android:name="com.njupt.safe.activity.BDVoiceTipsActivity"
+            android:theme="@android:style/Theme.Black.NoTitleBar" />
+
+        <!-- 手电筒 -->
+        <activity
+            android:name="com.njupt.safe.activity.LightActivity"
+            android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen" />
+
+        <receiver android:name="com.njupt.safe.receiver.PhoneReceiver" >
+            <intent-filter android:priority="1000" >
+                <action android:name="android.intent.action.NEW_OUTGOING_CALL" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.njupt.safe.receiver.SmsReciever" >
+            <intent-filter android:priority="1000" >
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.njupt.safe.receiver.MyAdmin" >
+            <meta-data
+                android:name="android.app.device_admin"
+                android:resource="@xml/my_admin" />
+
+            <intent-filter>
+                <action android:name="android.app.action.DEVICE_ADMIN_ENABLED" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.njupt.safe.receiver.BootCompleteReceiver" >
+            <intent-filter android:priority="1000" >
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.njupt.safe.receiver.ProcessReceiver" >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/example_appwidget_info" />
+        </receiver>
+        <receiver android:name="com.njupt.safe.receiver.KillProcessReceiver" >
+            <intent-filter>
+                <action android:name="com.njupt.action.killprocess" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name="com.njupt.safe.engine.ShowAddressService" />
+        <service android:name="com.njupt.safe.engine.BlackNumberService" />
+        <service android:name="com.njupt.safe.engine.BackupSmsService" />
+        <service android:name="com.njupt.safe.engine.AppLockService" />
+        <service android:name="com.njupt.safe.engine.AutoClearService" />
+        <service android:name="com.njupt.safe.engine.ProcessWidgetService" />
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" >
+        </service>
+
+        <!-- 新增的摇一摇显示当前位置功能 -->
+        <service android:name="com.njupt.safe.engine.ShakeShowLocationService" />
+
+        <!-- 新增小火箭后增加的service -->
+        <service android:name="com.njupt.safe.engine.FloatWindowService" />
+
+        <provider
+            android:name="com.njupt.safe.activity.AppLockProvider"
+            android:authorities="applock" />
+    </application>
+
+</manifest>

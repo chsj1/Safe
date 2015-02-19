@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/app_bg"
+    >
+    
+    <TextView 
+        style="@style/text_title_style"
+        android:text="ip拨号"
+        />
+    
+    <!--  <View style="@style/view_line" /> -->
+
+    <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ip拨号"
+        android:textColor="@android:color/white"
+        />
+    
+    <EditText 
+        android:id="@+id/et_ip_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        />
+    
+    <Button 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="add"
+         android:background="@drawable/call_locate_green"
+        android:text="确定"
+        />
+    
+</LinearLayout>
